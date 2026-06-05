@@ -40,6 +40,12 @@
           <span>👤</span> ข้อมูลนักเรียน
         </div>
         <div id="info" class="info-box"></div>
+        
+        <div class="subject-selector" id="subjectSelectorContainer" style="display: none;">
+          <h3>เลือกวิชาที่ต้องการรวมคะแนนและดูลำดับ:</h3>
+          <div class="checkbox-grid" id="subjectCheckboxes"></div>
+        </div>
+
         <div class="table-container">
           <table id="scoreTable">
             <thead>
@@ -67,10 +73,19 @@
 
       <div class="glass-card">
         <div class="card-title">
-          <span>📊</span> กราฟแสดงคะแนนรวม
+          <span>📊</span> กราฟแสดงคะแนนของคุณเทียบกับค่าเฉลี่ย
         </div>
         <div class="chart-wrapper">
           <canvas id="scoreChart"></canvas>
+        </div>
+      </div>
+
+      <div class="glass-card">
+        <div class="card-title">
+          <span>📉</span> การกระจายของคะแนนรวมทั้งหมด
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="distributionChart"></canvas>
         </div>
       </div>
     </div>
